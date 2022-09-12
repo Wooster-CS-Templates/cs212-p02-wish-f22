@@ -242,7 +242,8 @@ USE THE TESTS DIRECTORY TO HELP WITH REQUIREMENTS!
   * `*.err` files are any error output
   * `*.rc` files have the expected return code
 
-IF AN INPUT CONDITION IS NOT TESTED, DON'T CODE FOR IT!
+DO NOT ARBITRARILY LIMIT THE SIZE OR NUMBER OF ARGUMENTS FOR COMMANDS TO YOUR SHELL,
+* E.g, `const int MAX_ARGS = 100;`
 
 BUILD AND TEST FREQUENTY (`make test` runs the test suite on your program). If you are failing a test, compare the files in the `test` directory with the matching files in the `tests-out` directory that is created after running `make test` or the `test-wish.sh` shell script.
 
