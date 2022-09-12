@@ -232,6 +232,7 @@ messages and exit).
 ### Miscellaneous Hints
 
 **General Advice**
+---
 
 START EARLY, THIS IS NOT A TRIVIAL ASSIGNMENT AND WILL TAKE TIME TO COMPLETE!
 
@@ -241,6 +242,7 @@ USE THE TESTS DIRECTORY TO HELP WITH REQUIREMENTS!
   * `*.out` files are expected output
   * `*.err` files are any error output
   * `*.rc` files have the expected return code
+
 IF AN INPUT CONDITION IS NOT TESTED, DON'T CODE FOR IT!
 
 BUILD AND TEST FREQUENTY (`make test` runs the test suite on your program). If you are failing a test, compare the files in the `test` directory with the matching files in the `tests-out` directory that is created after running `make test` or the `test-wish.sh` shell script.
@@ -248,7 +250,7 @@ BUILD AND TEST FREQUENTY (`make test` runs the test suite on your program). If y
 Use Git to commit your code periodically (like when you are passing some to avoid losing work or to undo breaking changes. Also, if you want assistance on a coding issue, make sure to add, commit, and push your changes so that I can see your code in the GitHub repository.
 
 **Approaching the Problem**
-
+---
 Remember to get the **basic functionality** of your shell working before worrying about all of the error conditions and end cases. For example, first get a single command running (probably first a command with no arguments, such as `ls`).
 
 Next, add built-in commands. Then, try working on redirection. Finally, think
