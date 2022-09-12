@@ -232,10 +232,25 @@ messages and exit).
 
 ### Miscellaneous Hints
 
-Remember to get the **basic functionality** of your shell working before
-worrying about all of the error conditions and end cases. For example, first
-get a single command running (probably first a command with no arguments, such
-as `ls`). 
+**General Advice**
+
+START EARLY, THIS IS NOT A TRIVIAL ASSIGNMENT AND WILL TAKE TIME TO COMPLETE!
+
+USE THE TESTS DIRECTORY TO HELP WITH REQUIREMENTS!
+  * `*.desc` files describe the test in plain text
+  * `*.in` files are the input to your program
+  * `*.out` files are expected output
+  * `*.err` files are any error output
+  * `*.rc` files have the expected return code
+IF AN INPUT CONDITION IS NOT TESTED, DON'T CODE FOR IT!
+
+BUILD AND TEST FREQUENTY (`make test` runs the test suite on your program). If you are failing a test, compare the files in the `test` directory with the matching files in the `tests-out` directory that is created after running `make test` or the `test-wish.sh` shell script.
+
+Use Git to commit your code periodically (like when you are passing some to avoid losing work or to undo breaking changes. Also, if you want assistance on a coding issue, make sure to add, commit, and push your changes so that I can see your code in the GitHub repository.
+
+**Approaching the Problem**
+
+Remember to get the **basic functionality** of your shell working before worrying about all of the error conditions and end cases. For example, first get a single command running (probably first a command with no arguments, such as `ls`).
 
 Next, add built-in commands. Then, try working on redirection. Finally, think
 about parallel commands. Each of these requires a little more effort on
@@ -250,17 +265,3 @@ commands, arguments, and various operators; however, the operators
 Check the return codes of all system calls from the very beginning of your
 work. This will often catch errors in how you are invoking these new system
 calls. It's also just good programming sense.
-
-Beat up your own code! You are the best (and in this case, the only) tester of
-this code. Throw lots of different inputs at it and make sure the shell
-behaves well. Good code comes through testing; you must run many different
-tests to make sure things work as desired. Don't be gentle -- other users
-certainly won't be. 
-
-Finally, keep versions of your code. More advanced programmers will use a
-source control system such as git. Minimally, when you get a piece of
-functionality working, make a copy of your .c file (perhaps a subdirectory
-with a version number, such as v1, v2, etc.). By keeping older, working
-versions around, you can comfortably work on adding new functionality, safe in
-the knowledge you can always go back to an older, working version if need be.
-
