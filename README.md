@@ -1,6 +1,5 @@
 
-# Unix Shell
-
+# Project #2 - Unix Shell 
 In this project, you'll build a simple Unix shell. The shell is the heart of
 the command-line interface, and thus is central to the Unix/C programming
 environment. Mastering use of the shell is necessary to become proficient in
@@ -265,3 +264,10 @@ commands, arguments, and various operators; however, the operators
 Check the return codes of all system calls from the very beginning of your
 work. This will often catch errors in how you are invoking these new system
 calls. It's also just good programming sense.
+
+
+## Grading 30 Points
+* 21 points - All wish tests pass
+*  5 point - No memory errors/leaks (checked with valgrind)
+  * use the command `valgrind --leak-check=yes wish` for interactive mode or `valgrind --leak-check=yes wish file.txt` for batch mode.
+*  4 points - Code follows the [class style guidelines](http://csweb.wooster.edu/dguarnera/cs212/resources/guides/style-guidelines.html) and the code has proper functional decomposition (**Separate code into logical and reusable functions. Do not write everything in one big main**)
