@@ -231,8 +231,7 @@ messages and exit).
 
 ### Miscellaneous Hints
 
-**General Advice**
----
+**General Advice:**
 
 START EARLY, THIS IS NOT A TRIVIAL ASSIGNMENT AND WILL TAKE TIME TO COMPLETE!
 
@@ -249,8 +248,8 @@ BUILD AND TEST FREQUENTY (`make test` runs the test suite on your program). If y
 
 Use Git to commit your code periodically (like when you are passing some to avoid losing work or to undo breaking changes. Also, if you want assistance on a coding issue, make sure to add, commit, and push your changes so that I can see your code in the GitHub repository.
 
-**Approaching the Problem**
----
+**Approaching the Problem:**
+
 Remember to get the **basic functionality** of your shell working before worrying about all of the error conditions and end cases. For example, first get a single command running (probably first a command with no arguments, such as `ls`).
 
 Next, add built-in commands. Then, try working on redirection. Finally, think
@@ -266,7 +265,6 @@ commands, arguments, and various operators; however, the operators
 Check the return codes of all system calls from the very beginning of your
 work. This will often catch errors in how you are invoking these new system
 calls. It's also just good programming sense.
-
 
 ## Grading 30 Points
 * 21 points - All wish tests pass
